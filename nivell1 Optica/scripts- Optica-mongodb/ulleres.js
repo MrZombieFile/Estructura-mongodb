@@ -1,0 +1,4 @@
+
+db.createCollection( 'ulleres', {validator: {$jsonSchema: {bsonType: 'object',title:'ulleres',required: [         'proveidor',          'client',          'venedor',          'data_i_hora'],properties: {proveidor: {bsonType: 'objectId'},client: {bsonType: 'objectId'},marca: {bsonType: 'string'},graduacio: {bsonType: 'object',
+title:'graduacio vidres',properties: {dret: {bsonType: 'double'},esquerre: {bsonType: 'double'}}},tipus_de_muntura: {bsonType: 'string'},color_de_la_muntura: {bsonType: 'string'},color_vidres: {bsonType: 'object',
+title:'color vidres',properties: {dret: {bsonType: 'string'},esquerre: {bsonType: 'string'}}},preu: {bsonType: 'double'},venedor: {bsonType: 'string'},data_i_hora: {bsonType: 'timestamp'}}         }      }});  

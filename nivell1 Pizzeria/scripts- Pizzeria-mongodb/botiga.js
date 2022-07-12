@@ -1,0 +1,3 @@
+
+db.createCollection( 'botiga', {validator: {$jsonSchema: {bsonType: 'object',title:'botiga',required: [         'empleat'],properties: {adreca: {bsonType: 'object',
+title:'adreca',required: [         'codi_postal'],properties: {carrer: {bsonType: 'string'},numero: {bsonType: 'string'},pis: {bsonType: 'string'},porta: {bsonType: 'string'},codi_postal: {bsonType: 'objectId'}}},empleat: {bsonType: 'array',items: {bsonType: 'objectId'}}}         }      }});  

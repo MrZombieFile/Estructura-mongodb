@@ -1,0 +1,2 @@
+
+db.createCollection( 'categoria', {validator: {$jsonSchema: {bsonType: 'object',title:'categoria',properties: {nombre_categoria: {bsonType: 'string'},caracteristica_1: {bsonType: 'string'},caracteristica_2: {bsonType: 'string'},caracteristica_3: {bsonType: 'string'}}         }      }});  
